@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Quries 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .ld{
+            width: 100%;
+            height: 10vh;
+            background-color: burlywood;
+            color: blue;
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .sd{
+            width: 100%;
+            height: 10vh;
+            background-color: bisque;
+            position: relative;
+            display: none;
+            align-items: center;
+        }
+        .menu{
+            font-size: 40px;
+        }  
+        .menuitems{
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            width: 50%;
+            background-color: beige;
+            color: blue;
+            font-size: 20px;
+            gap: 10px;
+            padding: 10px 10px;
+
+        }
+        .menu:hover i{
+            transform: rotate(90deg);
+
+        }
+        .menu:hover .menuitems{
+            display: flex;
+        }
+        @media screen and (max-width:500px){
+            .ld{
+                display: none;
+            }
+            .sd{
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="ld">
+        <div>Home</div>
+        <div>About</div>
+        <div>Contact</div>
+        <div>Login</div>
+    </nav>
+
+    <nav class="sd">
+        <div class="menu">
+            <i class="fa-solid fa-bars" style="color: #d10505;"></i>
+            <div class="menuitems">
+                <div>Home</div>
+                <div>About</div>
+                <div>Contact</div>
+                <div>Login</div>
+            </div>
+        </div>
+    </nav>
+    <div class="con">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt excepturi cum voluptas provident qui, itaque velit alias laborum aut iste officia voluptates recusandae iusto dolor facilis adipisci molestias! Earum, veritatis.
+    </div>
+</body>
+
+</html>

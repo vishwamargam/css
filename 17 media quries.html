@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Quries 1</title>
+    <style>
+        nav {
+            width: 100%;
+            height: 10vh;
+            background-color: blue;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        nav div {
+            width: 18%;
+            text-align: center;
+        }
+
+        .cardcon {
+            width: 80%;
+            padding: 20px 0px;
+            background-color: aqua;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+
+        .card {
+            width: 40%;
+            height: 300px;
+            background-color: orange
+        }
+
+        @media screen and (max-width:500px) {
+            nav {
+                background-color: chocolate;
+                flex-direction: column;
+                height: 25vh;
+                color: white;
+                font-size: 25px;
+            }
+
+            nav div {
+                width: 100%;
+            }
+
+            .card {
+                width: 80%;
+            }
+        }
+
+        @media screen and (min-width:500px) and (max-width:700px) {
+            nav {
+                flex-wrap: wrap;
+                height: 15vh;
+                background-color: crimson;
+                color: white;
+                font-size: 20px;
+            }
+
+            nav div {
+                width: 40%;
+            }
+
+            .card {
+                width: 65%;
+            }
+        }
+
+        .con {
+            width: 100%;
+            text-align: justify;
+            text-indent: 30px;
+            font-size: 20px;
+        }
+
+        @media print {
+            nav {
+                display: none;
+            }
+
+            .cardcon {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>Home</div>
+        <div>About</div>
+        <div>Contact</div>
+        <div>Login</div>
+    </nav>
+    <div class="cardcon">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+    <div class="con">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, iure? Saepe id accusamus quibusdam. Vero,
+        at fugit! Perspiciatis quo molestias, distinctio itaque nisi voluptatum, nemo iusto vero nostrum deleniti
+        molestiae.
+    </div>
+</body>
+
+</html>

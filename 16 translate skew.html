@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate and skew</title>
+    <style>
+        .ele {
+            width: 280px;
+            height: 210px;
+            transition: all 10s linear;
+        }
+
+        .ele img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .ele:hover {
+            transform: translate(200px, 200px) skew(5deg, 5deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ele">
+        <img src="z2.jpg" alt="img" />
+    </div>
+</body>
+
+</html>

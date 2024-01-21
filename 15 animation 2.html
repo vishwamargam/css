@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .con {
+            width: 100%;
+            height: 100vh;
+            background-image: url("z1.jpg");
+            background-size: 100% 100%;
+            animation: demo 15s linear infinite;
+            animation-fill-mode: both;
+        }
+
+        @keyframes demo {
+            33% {
+                background-image: url("z2.jpg");
+                background-size: 100% 100%;
+            }
+
+            66% {
+                background-image: url("z3.jpg");
+                background-size: 100% 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con"></div>
+</body>
+
+</html>

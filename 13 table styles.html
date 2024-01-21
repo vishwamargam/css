@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table,tr,th,td{
+            border: 2px solid red;
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+        }
+        td,th{
+            width: 25%;
+            height: 50px;
+            text-align: center;
+            vertical-align: bottom;
+        }
+        /* tr td:nth-child(1),tr th:nth-child(1){
+            width: 30%;
+        } */
+        tr:nth-child(even){
+            background-color: bisque;
+            color: white;
+            font-size: 20px;
+        }
+        tr:first-child{
+            background-color: black;
+            color: aqua;
+            font-size: 25px;
+        }
+        td:hover{
+            color: blue;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr><th>Name</th><th>Branch</th><th>City</th><th>RL No</th></tr>
+        <tr><td>Vi</td><td>CS</td><td>IBP</td><td>909</td></tr>
+        <tr><td>Hi</td><td>CS</td><td>IBP</td><td>907</td></tr>
+        <tr><td>Ni</td><td>CS</td><td>WRL</td><td>904</td></tr>
+        <tr><td>Nik</td><td>BSC</td><td>IBP</td><td>201</td></tr>
+        <tr><td>Te</td><td>CS</td><td>IBP</td><td>999</td></tr>
+        <tr><td>VK</td><td>CR</td><td>DL</td><td>018</td></tr>
+        <tr><td>KL</td><td>CR</td><td>BGL</td><td>001</td></tr>
+        <tr><td>MS</td><td>CR</td><td>CH</td><td>007</td></tr>
+        <tr><td>RS</td><td>CR</td><td>MH</td><td>045</td></tr>
+    </table>
+</body>
+</html>

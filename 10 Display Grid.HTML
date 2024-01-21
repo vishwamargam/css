@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        * {
+            border: 0px;
+            margin: 0px;
+            outline: 0px;
+            padding: 0px;
+        }
+
+        .con {
+            width: 100%;
+            /* height: 100vh; */
+            background-color: rgb(131, 172, 208);
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+
+        .con div:nth-child(even) {
+            background-color: red;
+            color: bisque;
+        }
+
+        .con div:nth-child(6) {
+            background-color: rgb(181, 28, 153);
+            color: cornsilk;
+        }
+
+        .con div:nth-child(odd) {
+            background-color: rgb(70, 160, 208);
+            color: antiquewhite;
+
+        }
+
+        .con div {
+            width: 100%;
+            height: 100%;
+            border: 2px solid blue;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            font-style: italic;
+            box-sizing: border-box;
+            
+        }
+
+        .con div img {
+            width: 100%;
+            height: 80%;
+        }
+    </style>
+</head> 
+
+<body>
+    <div class="con">
+        <div><img src="z1.jpg" alt="IMG" />Image 1</div>
+        <div><img src="z2.jpg" alt="IMG" />Image 2</div>
+        <div><img src="z3.jpg" alt="IMG" />Image 3</div>
+        <div><img src="z4.jpg" alt="IMG" />Image 4</div>
+        <div><img src="z5.jpg" alt="IMG" />Image 5</div>
+        <div><img src="z6.jpg" alt="IMG" />Image 6</div>
+        <div><img src="z1.jpg" alt="IMG" />Image 7</div>
+        <div><img src="z2.jpg" alt="IMG" />Image 8</div>
+        <div><img src="z3.jpg" alt="IMG" />Image 9</div>
+        <div><img src="z4.jpg" alt="IMG" />Image 10</div>
+        <div><img src="z5.jpg" alt="IMG" />Image 11</div>
+        <div><img src="z6.jpg" alt="IMG" />Image 12</div>
+    </div>
+</body>
+
+</html>

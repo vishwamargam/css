@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text on img</title>
+    <style>
+        .con{
+            position: relative;
+            width: 600px;
+            height: 400px;
+
+        }
+        .con img{
+            width: 100%;
+            height: 100%;
+        }
+        .bt{
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            text-align: center;
+        }
+        .bt h2{
+            font-size: 30px;
+            color: crimson;
+        }
+        .bt button{
+            background: transparent;
+            border: 2px solid rgb(211, 132, 43);
+            padding: 5px 15px;
+            font-size: 25px;
+            color: orangered;
+            border-radius: 10px;
+        }
+        .bt button:hover{
+            background-color: black;
+        }
+        .ct{
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(201, 162, 168);
+            opacity: 0.5;
+            transition: all 5s;
+        }
+        .ct:hover{
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <img src="z1.jpg" alt="img"/>
+        <div class="bt">
+            <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia aliquid sit nemo? Ducimus quisquam cupiditate non. Necessitatibus maiores autem id.</h2>
+            <button>Know More</button>
+        </div>
+        <div class="ct"></div>
+    </div>
+</body>
+</html>

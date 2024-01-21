@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Absolute</title>
+    <style>
+        .con{
+            width: 400px; 
+            height: 400px;
+            position: relative;
+            margin: auto;
+            top: 100px;
+            border: 2px solid grey;
+        }
+        .con div:hover{
+            border: 2px solid red;
+            color: rgb(214, 47, 47);
+            background-color: rgb(5, 9, 24);
+            width: 120px;
+        }
+        .left{
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            font-size: 25px;
+            color: brown;
+        }
+        .right{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 25px;
+            color: brown;
+        }
+        .bright{
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+            font-size: 25px;
+            color: brown;
+        }
+        .bleft{
+            position: absolute;
+            left: 5px;
+            bottom: 5px;
+            font-size: 25px;
+            color: brown;
+        }
+        .center{
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            font-size: 25px;
+            color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="left"><p title="absolute div p tag1">left text</p></div>
+        <div class="right"><p title="absolute div p tag2">right text</p></div>
+        <div class="bleft"><p title="absolute div p tag3">bottom left text</p></div>
+        <div class="bright"><p title="absolute div p tag4">bottom right text</p></div>
+        <div class="center"><p title="absolute div p tag5">center text</p></div>
+    </div>
+</body>
+</html>

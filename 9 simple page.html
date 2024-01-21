@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0px;
+            border: 0px;
+            margin: 0px;
+            outline: 0px;
+        }
+
+        nav {
+            width: 100%;
+            height: 15vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: beige;
+            background-image: url("z6.jpg");
+            background-size: 100% 100%;
+            position: fixed;
+            top: 0px;
+            z-index: 10;
+
+        }
+
+        .logo {
+            /* box-sizing: border-box; */
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-left: 20px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+        .logo img:hover {
+            width: 110%;
+            height: 110%;
+            border-radius: 50%;
+        }
+
+        .dts {
+            display: flex;
+            /* justify-content: space-evenly; */
+            gap: 15px;
+            margin-right: 20px;
+        }
+
+        .dts div {
+            font-size: 30px;
+            color: rgb(27, 24, 202);
+            font-weight: bold;
+        }
+
+        .dts div:hover {
+            text-shadow: 5px;
+            text-transform: uppercase;
+            text-decoration-color: rgb(45, 158, 186);
+            border: 2px solid rgb(68, 206, 216);
+            border-radius: 15px;
+        }
+
+        #user {
+            margin-left: 10px;
+            font-size: 30px;
+            border: 0px;
+        }
+
+        #user:hover {
+            font-size: 35px;
+        }
+
+        /* .body {
+            width: 100%;
+            height: 85vh;
+            /* display: flex;
+            justify-content: ; */
+           /* position: relative;
+        } */
+
+        .banner {
+            width: 100%;
+            height: 85vh;
+            box-sizing: border-box;
+            /* width: 100%;
+            height: 100%; */
+            position: relative;
+            top: 15vh;
+
+        }
+
+        .banner img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .layer {
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            /* background: linear-gradient(rgb(89, 74, 65),rgba(138, 159, 228, 0.6)); */
+            background-color: aliceblue;
+            transition: all 5s;
+            opacity: 0.5;
+        }
+
+        .layer:hover {
+            background: transparent;
+            /* transition: all 5s; */
+            opacity: 0;
+        }
+
+        .banner_details {
+            width: 100%;
+            bottom: 50px;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 5px;
+
+        }
+
+        .banner_details h1 {
+            color: rgb(197, 49, 49);
+            text-shadow: 5px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .banner_details div {
+            color: rgb(183, 48, 210);
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .banner_details button {
+            text-transform: uppercase;
+            font-size: 22px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background: transparent;
+            border: 2px solid beige;
+            border-radius: 10px;
+        }
+
+        .banner_details h1:hover {
+            text-decoration: underline;
+            color: rgb(143, 26, 8);
+        }
+
+        .banner_details button:hover {
+            font-size: 25px;
+            border: 4px solid beige;
+        }
+
+        .cards {
+            width: 100%;
+            height: 110vh;
+            background-color: aliceblue;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .cards div {
+            width: 40%;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: justify;
+            gap: 3px;
+            color: rgb(81, 46, 151);
+        }
+
+        .cards div img {
+            width: 80%;
+            height: 200px;
+        }
+
+        .cards>h1 {
+            width: 100%;
+            text-align: center;
+            font-size: 35px;
+            color: #c80e0e;
+        }
+
+        .test {
+            background-color: rgb(217, 235, 252);
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .test div {
+            background-color: azure;
+            width: 40%;
+            height: 40%;
+            border: 3px double bisque;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0px 10px;
+        }
+
+        .test div img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        footer {
+            height: 10vh;
+            width: 100%;
+            background-color: bisque;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        footer div {
+            font-size: 25px;
+        }
+
+        footer div:hover {
+            font-size: 30px;
+        }
+
+        .icons {
+            width: 90px;
+            height: 20px;
+            border: 2px solid orangered;
+            border-radius: 20px;
+            background: transparent;
+            position: fixed;
+            right: 30px;
+            top: 49vh;
+            color: #c80e0e;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="z2.jpg" alt="img" />
+        </div>
+        <div class="dts">
+            <div>Menu</div>
+            <div>Catalog</div>
+            <div>Services</div>
+            <div>Contact Us</div>
+            <div>About Us</div>
+            <div id="user"><i class="fa-sharp fa-regular fa-user fa-fade"></i></div>
+        </div>
+    </nav>
+    <!-- <div class="body"> -->
+    <div class="banner">
+        <img src="z1.jpg" alt="img" />
+        <!-- </div> -->
+        <div class="layer"></div>
+        <div class="banner_details">
+            <h1>Welcome Home</h1>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum mollitia id aliquid. Odio incidunt
+                reiciendis pariatur natus nihil asperiores non, nemo officiis ratione.</div>
+            <button>Know More</button>
+        </div>
+    </div>
+    <div class="cards">
+        <h1>Display</h1>
+        <div>
+            <img src="z3.jpg" alt="img" />
+            <h1>Evening Spot</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, nesciunt aut repellat doloribus placeat
+                vel nihil totam tempora. Veritatis, aut perferendis beatae corrupti fuga autem excepturi eaque quia
+                sequi maiores!</p>
+            <p>Rating:
+                <i class="fa-solid fa-star" style="color: #c80e0e;"></i>
+                <i class="fa-solid fa-star" style="color: #c80e0e;"></i>
+                <i class="fa-solid fa-star" style="color: #c80e0e;"></i>
+                <i class="fa-solid fa-star" style="color: #c80e0e;"></i>
+                <i class="fa-solid fa-star-half" style="color: #b72a2a;"></i>
+            </p>
+        </div>
+        <div>
+            <img src="z4.jpg" alt="img" />
+            <h1>Water Falls</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure neque nemo, molestiae quis necessitatibus
+                laborum iste officiis dolore explicabo officia. Voluptate cum cupiditate, facilis qui officia dolore eos
+                fugit magnam.</p>
+            <p>Rating:
+                <i class="fa-solid fa-star" style="color: #c80e0e;"></i>
+                <i class="fa-solid fa-star" style="color: #c80e0e;"></i>
+                <i class="fa-solid fa-star" style="color: #c80e0e;"></i>
+                <i class="fa-solid fa-star" style="color: #c80e0e;"></i>
+                <i class="fa-solid fa-star-half" style="color: #b72a2a;"></i>
+            </p>
+        </div>
+        <div>
+            <img src="z1.jpg" alt="img" />
+            <h1>Car Events</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure neque nemo, molestiae quis necessitatibus
+                laborum iste officiis dolore explicabo officia. Voluptate cum cupiditate, facilis qui officia dolore eos
+                fugit magnam.</p>
+            <p>Rating:
+                <i class="fa-solid fa-star" style="color: #c80e0e;"></i>
+                <i class="fa-solid fa-star" style="color: #c80e0e;"></i>
+                <i class="fa-solid fa-star" style="color: #c80e0e;"></i>
+                <i class="fa-solid fa-star" style="color: #c80e0e;"></i>
+                <i class="fa-solid fa-star-half" style="color: #b72a2a;"></i>
+            </p>
+        </div>
+        <div>
+            <img src="z2.jpg" alt="img" />
+            <h1>Party Nights</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure neque nemo, molestiae quis necessitatibus
+                laborum iste officiis dolore explicabo officia. Voluptate cum cupiditate, facilis qui officia dolore eos
+                fugit magnam.</p>
+            <p>Rating:
+                <i class="fa-solid fa-star" style="color: #c80e0e;"></i>
+                <i class="fa-solid fa-star" style="color: #c80e0e;"></i>
+                <i class="fa-solid fa-star" style="color: #c80e0e;"></i>
+                <i class="fa-solid fa-star" style="color: #c80e0e;"></i>
+                <i class="fa-solid fa-star-half" style="color: #b72a2a;"></i>
+            </p>
+        </div>
+    </div>
+    <div class="test">
+        <h1 style="color: cornflowerblue;">
+            Testemonials
+        </h1>
+        <div>
+            <img src="z5.jpg" alt="img" />
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, totam eaque cum doloribus nesciunt
+                sunt quaerat nisi hic qui asperiores iste, ad necessitatibus officiis voluptate beatae omnis minima
+                doloremque nostrum ipsam eligendi nobis aut, facilis temporibus? Ut consequatur laborum eligendi
+                mollitia minus perspiciatis vel eos vero tempora aperiam. Earum iste ipsum suscipit facere omnis nam
+                consequatur deleniti error asperiores incidunt corporis quaerat, animi voluptatem praesentium quis
+                dicta. Impedit architecto necessitatibus maxime! Quam provident exercitationem aperiam reiciendis et
+                molestias? Mollitia, illum?
+            </p>
+            <p> User Rating:
+                <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                <i class="fa-solid fa-star-half" style="color: goldenrod;"></i>
+            </p>
+        </div>
+        <div>
+            <img src="z6.jpg" alt="img" />
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores beatae veritatis est atque dolore
+                tempore libero adipisci in quo hic modi, labore nesciunt quos nam fugiat quia officiis optio, possimus
+                provident vero eos illo dolor? Praesentium eligendi aliquam fuga voluptatibus maxime, est quam tempora
+                reiciendis magnam rerum alias totam impedit cupiditate blanditiis dolores repudiandae quae eius nemo
+                modi quibusdam dolor sunt cum veniam delectus? Veritatis blanditiis ipsum provident officiis molestiae,
+                maiores sequi distinctio cum vel tempora, odit cupiditate, explicabo assumenda?
+            </p>
+            <p> User Rating:
+                <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                <i class="fa-solid fa-star-half" style="color: goldenrod;"></i>
+            </p>
+        </div>
+    </div>
+    <footer>
+        <h1>Contact Us</h1>
+        <div><i class="fa-solid fa-phone" style="color: black;"></i></div>
+        <div><i class="fa-brands fa-whatsapp" style="color: #2d9a2f;"></i></div>
+        <div><i class="fa-solid fa-envelope" style="color: #bc2020;"></i></div>
+        <div><i class="fa-brands fa-square-x-twitter"></i></div>
+        <div><i class="fa-brands fa-instagram" style="color: #9e2e5b;"></i></div>
+    </footer>
+    <div class="icons">
+        <h3>Get Hired</h3>
+    </div>
+</body>
+
+</html>

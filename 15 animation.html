@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .con{
+            width: 200px;
+            height: 200px;
+            background-color: cadetblue;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            animation: demo 5s linear infinite alternate ;
+        }
+        @keyframes demo {
+            from{
+                background-color: aqua;
+                opacity: 1;
+            }
+            to{
+                background-color: red;
+                opacity: 0.5;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="con"></div>
+</body>
+</html>

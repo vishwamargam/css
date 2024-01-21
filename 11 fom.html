@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styles to Form</title>
+    <style>
+        *{
+            outline: 0px;
+            margin: 0px;
+            padding: 0px;
+        }
+        .con{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom right, rgba(167, 106, 106, 0.4),rgba(59, 174, 160, 0.4)),url("z1.jpg");
+            background-size: 100% 100%;
+        }
+        .form{
+            width: 35%;
+            height: 50vh;
+            background: linear-gradient(rgba(179, 128, 77, 0.6),rgba(112, 149, 186, 0.6)), url("z2.jpg");
+            background-size: 100% 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }   
+        input{
+            width: 80%;
+            height: 30px;
+            border: 0px;
+            border-bottom: 3px double red;
+            background: transparent;
+            font-size: 20px;
+            color: sandybrown;
+        }
+        ::placeholder{
+            font-style: italic;
+            font-size: 18px;
+            color: rgb(75, 197, 201);
+            text-transform: capitalize;
+        }
+        h1{
+            color: orange;
+        }
+        button{
+            padding: 5px 20px;
+            font-size: 18px;
+            border-radius: 10px;
+            border: 2px solid gray;
+            background-color: burlywood;
+            color: rgb(102, 33, 102);
+        }
+        button:hover{
+            background-color: bisque;
+            color: darkmagenta;
+            border: 2px solid rgb(255, 179, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="form">
+            <h1>Login Page</h1>
+            <input type="text" placeholder="enter user id"/>
+            <input type="password" placeholder="enter password"/>
+            <button>Login</button>
+        </div>
+    </div>
+</body>
+</html>

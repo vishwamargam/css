@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub Menu</title>
+    <style>
+        nav {
+            width: 100%;
+            height: 15vh;
+            background-color: aliceblue;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        nav>div {
+            background-color: rgb(204, 231, 255);
+            height: 20px;
+            width: 10%;
+            text-align: center;
+            font-size: 18px;
+            color: red;
+            padding: 5px 0px;
+        }
+
+        .submenu {
+            background-color: rgb(172, 216, 255);
+            color: crimson;
+            display: none;
+            /* flex-direction: column; */
+        }
+
+        .home:hover .submenu {
+            /* display: flex; */
+            display: block;
+        }
+
+        .reg:hover .submenu {
+            display: block;
+        }
+
+        .fsd {
+            position: relative;
+        }
+
+        .fsdsub {
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: 100%;
+            background-color: rgb(158, 206, 248);
+            color: red;
+            display: none;
+        }
+
+        .fsd:hover .fsdsub {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="home">Home
+            <div class="submenu">
+                <div>New File</div>
+                <div>Open File</div>
+                <div>Save</div>
+                <div>Save as</div>
+                <div>Close</div>
+            </div>
+        </div>
+        <div>About</div>
+        <div>Login</div>
+        <div class="reg">Register
+            <div class="submenu">
+                <div class="fsd">FSD
+                    <div class="fsdsub">
+                        <div>Java</div>
+                        <div>Python</div>
+                        <div>.NET</div>
+                        <div>MERN</div>
+                    </div>
+                </div>
+                <div>DS</div>
+                <div>AI</div>
+                <div>ML</div>
+            </div>
+        </div>
+        <div>Contact Us</div>
+    </nav>
+</body>
+
+</html>

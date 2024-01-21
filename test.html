@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTD &copy;</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="z1.jpg"/>
+    <style>
+        * {
+            margin: 0px;
+            outline: 0px;
+            border: 0px;
+        }
+
+        body {
+            background-color: rgb(249, 228, 249);
+        }
+
+        .nav1 {
+            height: 15vh;
+            width: 100%;
+            background-color: blueviolet;
+        }
+
+        .nav1>div {
+            height: 100%;
+            width: 100%;
+            background-image: url("https://online.tirupatibalaji.ap.gov.in/misc/images/v4/TTD_MOBILE_SKY_MORNING_N.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav1>div>div {
+            width: 30%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: blueviolet;
+        }
+
+        .nav1 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .nav2 {
+            width: 100%;
+            height: 8vh;
+            background-color: blueviolet;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+        }
+
+        .nav2>div {
+            display: flex;
+            gap: 20px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .banner {
+            width: 100%;
+            height: 77vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .banner>div {
+            width: 80%;
+            height: 90%;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+        }
+
+        .title1 {
+            margin-left: 10%;
+            width: 80%;
+            height: 8vh;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .title1 a {
+            font-size: 20px;
+        }
+
+        .grid {
+            margin-left: 10%;
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+
+        .grid>div {
+            width: 10%;
+        }
+
+        .sdmenu {
+            padding: 10px;
+            margin-top: 20px;
+            margin-left: 10%;
+            width: 80%;
+        }
+
+        .sdmenu>div {
+            margin-top: 20px;
+            width: 400px;
+            height: 50vh;
+            background-color: white;
+            border-radius: 20px;
+            overflow: auto;
+            padding: 5px;
+            font-size: 20px;
+        }
+
+        .sdmenu span {
+            padding-left: 20px;
+            background-color: red;
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+            padding: 2px;
+            margin-right: 10px;
+        }
+        footer{
+            margin-top: 20px;
+            height: 8vh;
+            width: 100%;
+            background-color: violet;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav1">
+        <div>
+            <div><img src="https://online.tirupatibalaji.ap.gov.in/misc/images/v4/TTD_MOBILE_LOGO.png?w=384"
+                    alt="img" /></div>
+            <div><img src="https://online.tirupatibalaji.ap.gov.in/misc/images/v4/Murthy.png" alt="img" /></div>
+            <div>
+                <p>Namaskaram Pilgrim</p>
+                <h2>Om Namo Venkatesaya</h2>
+            </div>
+        </div>
+    </nav>
+    <nav class="nav2">
+        <div>
+            <div><i class="fa-solid fa-house"></i></div>
+            <div>About TTD</div>
+            <div>Online services</div>
+            <div>eBooks</div>
+            <div>News</div>
+            <div>Srivari Seva</div>
+            <div>SVBC</div>
+        </div>
+        <div>
+            <div><i class="fa-solid fa-arrow-right-to-bracket"></i></div>Login
+        </div>
+    </nav>
+    <div class="banner">
+        <div>
+            <img src="https://online.tirupatibalaji.ap.gov.in/misc/images/v4/SVBC_LIVE_STREAMING_WEB.png" alt="img" />
+        </div>
+    </div>
+    <div class="title1">
+        <div>
+            <h1>Pilgrim Services</h1>
+        </div>
+        <div><a href="#">More Services</a></div>
+    </div>
+    <div class="grid">
+        <div>
+            <div><img src="https://online.tirupatibalaji.ap.gov.in/misc/images/v4/SED_WEB_ICON.svg" alt="img" /></div>
+            <div>Special Entry Darshan (Ammavari Temple)</div>
+        </div>
+        <div>
+            <div><img src="https://online.tirupatibalaji.ap.gov.in/misc/images/v4/ACC_WEB.svg" alt="img" /></div>
+            <div>Accommodation</div>
+        </div>
+        <div>
+            <div><img src="https://online.tirupatibalaji.ap.gov.in/misc/images/v4/SED_WEB_ICON.svg" alt="img" /></div>
+            <div>Special Entry Drshan</div>
+        </div>
+        <div>
+            <div><img src="https://online.tirupatibalaji.ap.gov.in/misc/images/v4/PLD_WEB_ICON.svg" alt="img" /></div>
+            <div>Differently Abled/Sr.Citizen Darshan</div>
+        </div>
+        <div>
+            <div><img src="https://online.tirupatibalaji.ap.gov.in/misc/images/v4/APD_WEB_ICON.svg" alt="img" /></div>
+            <div>Angapradakshinam</div>
+        </div>
+        <div>
+            <div><img src="https://online.tirupatibalaji.ap.gov.in/misc/images/v4/SEVA_WEB_ICON.svg" alt="img" /></div>
+            <div>Srivari Arjitha Sevas (Virtual Participation)</div>
+        </div>
+        <div>
+            <div><img src="https://online.tirupatibalaji.ap.gov.in/misc/images/v4/SEVA_WEB_ICON.svg" alt="img/"></div>
+            <div>Srivari Arjitha Sevas, Tirupathi</div>
+        </div>
+        <div>
+            <div><img src="https://online.tirupatibalaji.ap.gov.in/misc/images/v4/SEVA_DIP_WEB_ICON.svg" alt="img" />
+            </div>
+            <div>Seva Electronic Dip</div>
+        </div>
+        <div>
+            <div><img src="https://online.tirupatibalaji.ap.gov.in/misc/images/v4/USSES_WEB_ICON.svg" alt="img" /></div>
+            <div>SV Pranadana Trust Donations (USSES)</div>
+        </div>
+        <div>
+            <div><img src="https://online.tirupatibalaji.ap.gov.in/misc/images/v4/USSES_WEB_ICON.svg" alt="img" /></div>
+            <div>Swamyvari (e-hundi)</div>
+        </div>
+        <div>
+            <div><img src="https://online.tirupatibalaji.ap.gov.in/misc/images/v4/USSES_WEB_ICON.svg" alt="img" /></div>
+            <div>Ammavari (e-hundi)</div>
+        </div>
+        <div>
+            <div><img src="https://online.tirupatibalaji.ap.gov.in/misc/images/v4/SEVA_WEB_ICON.svg" alt="img" /></div>
+            <div>Donar/USSES Privilages</div>
+        </div>
+        <div>
+            <div><img src="https://online.tirupatibalaji.ap.gov.in/misc/images/v4/SRIVANI_WEB_ICON.svg" alt="img" />
+            </div>
+            <div>SRIVANI and Other Trust Donations</div>
+        </div>
+        <div>
+            <div><img src="https://online.tirupatibalaji.ap.gov.in/misc/images/v4/KALYANAVEDIKA_WEB_ICON.svg"
+                    alt="img" /></div>
+            <div>Kalyanavedika</div>
+        </div>
+        <div>
+            <div><img src="https://online.tirupatibalaji.ap.gov.in/misc/images/v4/KALYANAMANDAPAM_WEB_ICON.svg"
+                    alt="img" /></div>
+            <div>Kalyanamandapam</div>
+        </div>
+        <div>
+            <div><img src="https://online.tirupatibalaji.ap.gov.in/misc/images/v4/PANCHAGAVYA_WEB_ICON.svg" alt="img" />
+            </div>
+            <div>Panchagavya Products</div>
+        </div>
+    </div>
+    <div class="sdmenu">
+        <h1>Latest Updates</h1>
+        <div>
+            <ul>
+                <li><span>New</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis magnam error
+                    necessitatibus laudantium accusamus suscipit sequi incidunt omnis neque tenetur.</li>
+                <li><span>New</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis magnam error
+                    necessitatibus laudantium accusamus suscipit sequi incidunt omnis neque tenetur.</li>
+                <li><span>New</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis magnam error
+                    necessitatibus laudantium accusamus suscipit sequi incidunt omnis neque tenetur.</li>
+                <li><span>New</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis magnam error
+                    necessitatibus laudantium accusamus suscipit sequi incidunt omnis neque tenetur.</li>
+                <li><span>New</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis magnam error
+                    necessitatibus laudantium accusamus suscipit sequi incidunt omnis neque tenetur.</li>
+                <li><span>New</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis magnam error
+                    necessitatibus laudantium accusamus suscipit sequi incidunt omnis neque tenetur.</li>
+                <li><span>New</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis magnam error
+                    necessitatibus laudantium accusamus suscipit sequi incidunt omnis neque tenetur.</li>
+                <li><span>New</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis magnam error
+                    necessitatibus laudantium accusamus suscipit sequi incidunt omnis neque tenetur.</li>
+                <li><span>New</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis magnam error
+                    necessitatibus laudantium accusamus suscipit sequi incidunt omnis neque tenetur.</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div>Copyright &copy; 2023 Tirumala Tirupathi Devasthanams - All rights reserved</div>
+        <div>Call Center (24X7): 155 257</div>
+        <div>Terms and conditions</div>
+        <div class="line"></div>
+        <div>Guidelines & FAQs</div>
+        <div>Feedback</div>
+        <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+    </footer>
+</body>
+</html>

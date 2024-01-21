@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basis</title>
+    <style>
+        .con{
+            width: 100%;
+            height: 20vh;
+            background-color: bisque;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .con div{
+            flex-basis: 200px;
+        }
+        .con div:nth-child(even){
+            background-color: chocolate;
+        }
+        .con div:nth-child(odd){
+            background-color: blueviolet;
+        }
+        .i1{
+            flex-grow: 2;
+            order: 3;
+        }
+        .i2{
+            flex-grow: 1;
+            flex-shrink: 0;
+            order: 4;
+        }
+        .i3{
+            flex-shrink: 2;
+            order: 1;
+        }
+        .i4{
+            order: 2;
+        }
+        .i5{
+            align-self: center;
+        }
+        .i6{
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="i1">1</div>
+        <div class="i2">2</div>
+        <div class="i3">3</div>
+        <div class="i4">4</div>
+        <div class="i5">5</div>
+        <div class="i6">6</div>
+    </div>
+</body>
+</html>

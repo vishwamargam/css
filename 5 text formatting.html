@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text formatting</title>
+    <style>
+        div{
+            width: 300px;
+            /* height: 100px; */
+            background-color: bisque;
+            padding: 30px;
+            margin: 20px auto;
+        }
+        div:hover{
+            text-transform: uppercase;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-decoration: none;
+            font-size: 25px;
+            color: #ff96ad;
+            border: 2px solid #ff96ad;
+            background-color: #17181c;
+        }
+        .con1{
+            text-align: center;
+            text-decoration: line-through;
+            text-indent: 5px;
+            font-size: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-style: italic;
+            color: blue;
+            font-variant: small-caps;
+        }
+        .con2{
+            width: 300px;
+            font-size: 20px;
+            color: blue;
+            border: 2px solid grey;
+            padding: 5px;
+            text-indent: 40px;
+            letter-spacing: 25px;
+            word-spacing: 8px;
+            line-height: 30px;
+            /* word-break: break-all; */
+            /* word-wrap: wrap; */
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+        }
+        h1{
+            width: 100%;
+            text-align: center;
+            color: green;
+            text-transform: uppercase;
+            text-decoration: underline wavy red;
+        }
+        h2{
+            text-decoration: line-through;
+        }
+        h3{
+            text-decoration: overline;
+        }
+    </style>
+</head>
+<body>
+    <div class="con1">Text in div 1</div>
+    <div class="con2">Text in div 2</div>
+    <div class="con3"><h1>Text in h1 1</h1></div>
+    <div class="con4"><h2>Text in h2 2</h2></div>
+    <div class="con5"><h3>Text in h2 2</h3></div>
+</body>
+</html>
